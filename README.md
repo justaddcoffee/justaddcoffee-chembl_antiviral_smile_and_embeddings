@@ -14,8 +14,7 @@ The data structure produced here will be used to investigate whether embeddings 
 can be used to guide GCPNs in producing more useful/viable antivirals for COVID-19 treatment. Specifically,
 for each compound produced by GCPN, a loss function might be defined using the product of the Tanimoto similarity and cosine similarity for the ChEMBL antivirals, something like:
 
-$L = -max^{n}_{i=1}(tanimoto(C^{gcpn}, C^{chembl}_i) * cosine\_sim(C^{chembl}_i, N^{interest}))$
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=L&space;=&space;-max^{n}_{i=1}(tanimoto(C^{gcpn},&space;C^{chembl}_i)&space;*&space;cosine_sim(C^{chembl}_i,&space;N^{interest}))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;=&space;-max^{n}_{i=1}(tanimoto(C^{gcpn},&space;C^{chembl}_i)&space;*&space;cosine_sim(C^{chembl}_i,&space;N^{interest}))" title="L = -max^{n}_{i=1}(tanimoto(C^{gcpn}, C^{chembl}_i) * cosine_sim(C^{chembl}_i, N^{interest}))" /></a>
 
 where n is the number of ChEMBL antivirals, N is the SARS-CoV-2 node of interest (ADRP, Mpro, SARS-CoV-2 itself, etc) that is to be targeted by the therapeutic.
 
